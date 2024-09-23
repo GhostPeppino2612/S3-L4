@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "outfit";
+    font-size: 15px;
+    background-color: grey;
+}
+
+h1 {
+    margin-block: 1em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.calendar {
+    margin-block: 3em;
+    margin-inline: auto;
+    width: 650px;
+    color: white;
+}
+
+.calendar .calendar-title {
+    background-color: #131334;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    font-size: 2em;
+}
+
+.calendar .calendar-days {
+    background-color: #0c0b1d;
+}
+.calendar .calendar-days .day {
+    text-align: center;
+    border-radius: 5px;
+    padding: 1em;
+    width: 14.30%;
+    display: inline-block;
+    margin-inline-end: -5px;
+}
+
+.selected {
+    border: 1px solid #7a408a;
+    color: #a74bcf;
+}
+
+h2 {
+    margin-block-end: 0.5em;
+}
+
+.add-meeting {
+    background-color: #131334;
+    padding: 1em;
+}
+
+.add-meeting .input-sec {
+    display: inline-block;
+}
+
+
+.add-meeting div, .selected-days, form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.add-meeting form div label, .selected-day p:first-of-type {
+    font-size: 1.2em;
+}
+
+.selected-day p:nth-of-type(2) {
+    font-size: 0.9em;
+}
+
+.add-meeting form div label, .add-meeting form div input {
+    display: block;
+    margin-inline-end: 2em;
+    margin-block-end: 0.5em;
+}
+
+.selected-day {
+    margin-inline-end: 1em; 
+}
+
+.selected-day p {
+    margin-block-end: 0.5em;
+}
+
+
+.add-meeting form div input {
+    padding: 0.1em;
+}
+
+#meeting-time {
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    background-color: #0c0b1d;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background-color: #a74bcf;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+#meeting-name {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 0;
+    background-color: #0c0b1d;
+    color: white;
+}
+
+#add {
+    background-color: #a74bcf;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.note-sec {
+    background-color: #0c0b1d;
+    padding: 2em;
+    border-bottom: 20px solid #131334;
+}
+
+.note-sec .note-title, .note-sec .note-time {
+    padding: 1em;
+    width: 50%;
+    margin: -2px;
+    display: inline-block;
+    text-align: center;
+    word-break: break-all;
+    vertical-align: middle;
+    font-size: 1.6em;
+}

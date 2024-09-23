@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Epicalendar</h1>
+    <div class="calendar">
+      <div class="calendar-title">Marzo</div>
+      <div class="calendar-days"></div>
+      <div class="add-meeting">
+        <h2>Add Meeting</h2>
+        <div class="input-sec">
+          <div class="selected-day">
+            <p>Meeting Day</p>
+            <p id="current-day">Click on a day</p>
+          </div>
+          <form action="">
+            <div>
+              <label for="meeting-time">Meeting Time</label>
+              <input type="time" id="meeting-time" />
+            </div>
+            <div>
+              <label for="meeting-name">Meeting Name</label>
+              <input
+                type="text"
+                id="meeting-name"
+                placeholder="Insert a name for the meeting"
+              />
+            </div>
+            <div>
+              <label for="add">Add</label>
+              <input type="submit" id="add" value="Save Meeting" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="note-sec"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

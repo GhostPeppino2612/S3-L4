@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkgray;
+}
+
+h1 {
+    font-style: italic;
+}
+
+.n-tables {
+    padding: 1em;
+}
+
+.n-tables form label, .n-tables form input {
+    vertical-align: baseline;
+} 
+
+.n-tables form input {
+    transform: translateY(-3px);
+    padding: 0.5em;
+    width: 50px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+
+.start-btn {
+    background-color: rgb(42, 165, 79);
+    width: 200px;
+    margin: auto;
+    padding: 0.5em;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: rgb(44, 100, 53);
+}
+
+.stop, .draw {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 5px; 
+}
+
+.stop-draw-btn {
+    display: none;
+}
+
+.stop {
+    background-color: brown;
+}
+
+.draw {
+    background-color: rgb(30, 120, 199);
+}
+
+.stop:hover {
+    background-color: rgb(156, 70, 70);
+}
+
+.draw:hover {
+    background-color: rgb(77, 129, 175);
+}
+
+.tombola, .table {
+    text-align: left;
+    margin-inline: auto;
+    margin-block: 2em;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.tombola {
+    width: 600px;
+}
+
+.table {
+    width: 550px;
+}
+
+.cell {
+    padding: 0.5em;
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+}
+
+.table-win {
+    background-color: rgb(79, 211, 79);
+}
+
+.table-lost {
+    background-color: crimson;
+    color: black;
+}
+
+.draw-cell {
+    color: crimson;
+}
